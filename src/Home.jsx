@@ -1,14 +1,11 @@
 import React from 'react'
-// import App from './App'
+import M from './M'
 
-const Home = (b) => {
-
-  
+const Home = () => {
   return (
-    <div>
-       {/* <P a={a.b}/> */}
-       <h1>home</h1>
+    <div>Home
 
+      <M/>
     </div>
   )
 }
