@@ -1,19 +1,19 @@
-import { useContext } from "react"
-import Context from "./Context"
+// import { useContext } from "react"
+// import Context from "./Context"
 
-const M = () => {
-    let a = useContext(Context)
-    console.log(a,'hehhehehe');
+// const M = () => {
+//     let a = useContext(Context)
+//     console.log(a,'hehhehehe');
     
-  return (
-    <div>
-        <h1>
-            {
+//   return (
+//     <div>
+//         <h1>
+//             {
                 
-            }
-        </h1>
-    </div>
-  )
-}
+//             }
+//         </h1>
+//     </div>
+//   )
+// }
 
-export default M
+// export default M
