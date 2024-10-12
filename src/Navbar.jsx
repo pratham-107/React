@@ -42,19 +42,23 @@
 
 // export default Navbar
 
-import React from 'react'
+import React from 'react';
 
-const Navbar = () => {
+const Navbar = ({ cartCount }) => {
   return (
     <div>
       <nav>
-        <li>home</li>
-        <li>about</li>
-        <li>contact</li>
-        <button id='btn'>add to cart</button>
+        
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+        
+        <button id='btn'>
+          Go to Cart
+        </button>
       </nav>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

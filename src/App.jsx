@@ -114,36 +114,88 @@
 
 
 
+                        ///MENU DATA ////
+
+// import React, { useState, useEffect } from 'react';
+// import './App.css';
+// import Home from './Home';
+// import Cart from './Cart';
+// import Navbar from './Navbar';
+
+// const App = () => {
+//   let [recipes, setRecipes] = useState([]);
+//   let [cartItems, setCartItems] = useState([]);
+
+//   useEffect(() => {
+//     fetch('https://dummyjson.com/recipes')
+//       .then((res) => res.json())
+//       .then((data) => {
+//         setRecipes(data.recipes);
+//       });
+//   }, []);
+
+//   const addToCart = (recipe) => {
+//     setCartItems((prevItems) => [...prevItems, recipe]);       //previous items ko dekhne ke liye
+//   };
+
+//   return (
+//     <div>
+//       <Navbar />
+//       <Home />
+//       <Cart cartItems={cartItems} />
+
+//       <div className="card-container">
+
+        // {recipes.map((recipe) => (
+        //   <div key={recipe.id} className="card">
+        //     <img src={recipe.image} alt={recipe.name} className="card-image" />
+
+        //     <h2 className="card-heading">{recipe.title} {recipe.name}</h2>
+
+        //     <button className="card-button" onClick={() => addToCart(recipe)}>Add to Cart</button>
+
+        //   </div>
+        // ))}
+
+//       </div>
+
+//     </div>
+//   );
+// };
+
+// export default App;
 
 
 
-import React, { useReducer } from 'react'
-import './App.css'
-import Home from './Home'
-import Cart from './Cart'
-import Navbar from './Navbar'
+
+// import React, { useState } from 'react'
+
+// const App = () => {
+//   let [count,setcount] = useState(0)
+//   let [bgcolor,setbgcolor] = useState('white');
+
+//   function fun1(){
+//     setcount(count+1)
+
+//     let color = ['red','blue','green','yellow','black','pink','purple']
+
+//     setbgcolor(color[count % bgcolor.length])
+//   }
+
+//   return (
+//     <div>
+//       <p style={{backgroundColor: bgcolor,height:'200px'}}>{count}</p>
+//       <button onClick={fun1}>click</button>
+//     </div>
+//   )
+// }
+
+// export default App
 
 
-const App = () => {
-  return (
-    <div>
-      <Home />
-      <Cart />
-      <Navbar />
-
-      <div className="card">
-      <img 
-        src="https://via.placeholder.com/300" 
-        alt="Sample Image" 
-        className="card-image"
-      />
-      <h2 className="card-heading">Card Heading</h2>
-      <button className="card-button">Click Me</button>
-    </div>
-
-    </div>
-  )
-}
 
 
-export default App
+
+
+
+

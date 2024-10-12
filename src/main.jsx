@@ -1,5 +1,5 @@
-import { StrictMode, useContext } from 'react'
-// import {BrowserRouter} from 'react-router-dom'
+// import { StrictMode, useContext } from 'react'
+import {BrowserRouter} from 'react-router-dom'
 import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 // import './index.css'
@@ -11,12 +11,11 @@ import App from './App.jsx'
 createRoot(document.getElementById('root')).render(
   // <StrictMode>
   // </StrictMode>,
-  // <BrowserRouter>
-//  <Context.Provider value= 'pratham'>
+  <BrowserRouter>
+ {/* <Context.Provider value= 'pratham'> */}
   <App/>
-//  {/* </Context.Provider> */}
+ {/* </Context.Provider> */}
  
-  
-  
-  // {/* </BrowserRouter> */}
+   </BrowserRouter>
 )
+
