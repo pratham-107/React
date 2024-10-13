@@ -42,23 +42,27 @@
 
 // export default Navbar
 
-import React from 'react';
 
-const Navbar = ({ cartCount }) => {
+
+
+
+
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+const NavBar = () => {
   return (
     <div>
       <nav>
-        
+        <Link to='/'>
           <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
-        
-        <button id='btn'>
-          Go to Cart
-        </button>
+        </Link>
+        <Link to='/cart'>
+          <li>Cart</li>
+        </Link>
       </nav>
     </div>
   );
 };
 
-export default Navbar;
+export default NavBar;

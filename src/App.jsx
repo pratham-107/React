@@ -110,64 +110,6 @@
 // export default App
                                          
 
-
-
-
-
-                        ///MENU DATA ////
-
-// import React, { useState, useEffect } from 'react';
-// import './App.css';
-// import Home from './Home';
-// import Cart from './Cart';
-// import Navbar from './Navbar';
-
-// const App = () => {
-//   let [recipes, setRecipes] = useState([]);
-//   let [cartItems, setCartItems] = useState([]);
-
-//   useEffect(() => {
-//     fetch('https://dummyjson.com/recipes')
-//       .then((res) => res.json())
-//       .then((data) => {
-//         setRecipes(data.recipes);
-//       });
-//   }, []);
-
-//   const addToCart = (recipe) => {
-//     setCartItems((prevItems) => [...prevItems, recipe]);       //previous items ko dekhne ke liye
-//   };
-
-//   return (
-//     <div>
-//       <Navbar />
-//       <Home />
-//       <Cart cartItems={cartItems} />
-
-//       <div className="card-container">
-
-        // {recipes.map((recipe) => (
-        //   <div key={recipe.id} className="card">
-        //     <img src={recipe.image} alt={recipe.name} className="card-image" />
-
-        //     <h2 className="card-heading">{recipe.title} {recipe.name}</h2>
-
-        //     <button className="card-button" onClick={() => addToCart(recipe)}>Add to Cart</button>
-
-        //   </div>
-        // ))}
-
-//       </div>
-
-//     </div>
-//   );
-// };
-
-// export default App;
-
-
-
-
 // import React, { useState } from 'react'
 
 // const App = () => {
@@ -199,3 +141,26 @@
 
 
 
+
+import React, { useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Navbar from './Navbar';
+import Home from './Home';
+import Cart from './Cart';
+
+
+const App = () => { 
+  let [cartItems, setCartItems] = useState([]); 
+  
+  return (
+    <div>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Home cartItems={cartItems} setCartItems={setCartItems} />} />
+        <Route path='/cart' element={<Cart cartItems={cartItems} />} />
+      </Routes>
+    </div>
+  );
+}
+
+export default App;
