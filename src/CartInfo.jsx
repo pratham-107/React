@@ -6,7 +6,7 @@ const CartInfo = ({ recipes = [], addToCart }) => {
 
   return (
     <div>
-      {recipes.length > 0 ? (
+      {recipes.length > 0 ? ( 
         recipes.map((recipe, index) => (
           <div key={index} className='recipe-item'>
             <img src={recipe.image} alt={recipe.name} />

@@ -1,22 +1,5 @@
-// import React from 'react'
-// // import M from './M'
-// import CartInfo from './CartInfo'
-
-// const Home = () => {
-//   return (
-//     <div>Home
-// <CartInfo />
-//       {/* <M/> */}
-//     </div>
-//   )
-// }
-
-// export default Home
-
-
-
 import React, { useState, useEffect } from 'react';
-import CartInfo from './CartInfo'; 
+import CartImt from './CartImt'; 
 import './App.css';
 
 const Home = ({ cartItems, setCartItems }) => {
@@ -41,7 +24,7 @@ const Home = ({ cartItems, setCartItems }) => {
   return (
     <div>
       <h2>Available Recipes</h2>
-      <CartInfo recipes={recipes} addToCart={addToCart} />
+      <CartImt recipes={recipes} addToCart={addToCart} />
     </div>
   );
 };

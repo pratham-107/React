@@ -123,3 +123,24 @@ button {
   border: none;
   cursor: pointer;
 }
+
+.cart-item {
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 200px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 30px;
+}
+
+.cart-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.cart-item p {
+  margin: 10px 0;
+}
